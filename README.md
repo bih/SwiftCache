@@ -1,4 +1,4 @@
-![SwiftCache.png]()
+![](SwiftCache.png)
 
 # Lightweight Swift Cache
 
