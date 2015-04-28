@@ -29,3 +29,5 @@ names.respond { data in
 }
 
 ```
+
+Released under the [MIT License](http://bih.mit-license.org)

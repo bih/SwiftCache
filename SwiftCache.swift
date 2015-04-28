@@ -1,9 +1,9 @@
 //
 //  SwiftCache.swift
-//  MLH
+//  http://github.com/bih/SwiftCache
 //
 //  Created by Bilawal Hameed on 28/04/2015.
-//  Copyright (c) 2015 Major League Hacking. All rights reserved.
+//  Copyright (c) 2015 Bilawal Hameed. All rights reserved.
 //
 
 import UIKit
