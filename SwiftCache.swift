@@ -24,6 +24,14 @@ class SwiftCache {
         self.respond = { objectData in }
     }
     
+    init(name : String) {
+        self.name = name
+        self.altName = "\(name)-expires"
+        self.expiresIn = 60
+        self.data = [[String: AnyObject]]()
+        self.respond = { objectData in }
+    }
+    
     func request(callback: (SwiftCache) -> Void) -> SwiftCache {
         if isCached() {
             self.respond(gets())
@@ -56,10 +64,6 @@ class SwiftCache {
         }
         
         return saveToCache(convertedToObj)
-    }
-    
-    func saveToCache(data: [[String: AnyObject]]) -> SwiftCache {
-        return saveToCache(data)
     }
     
     func saveToCache(data: AnyObject) -> SwiftCache {
