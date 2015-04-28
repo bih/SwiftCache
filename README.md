@@ -1,8 +1,8 @@
 ![](SwiftCache.png)
 
-# Lightweight Swift Cache
+A beautifully lightweight cache written for **Swift**. It has been tested on iOS and OS X. I wrote it over an hour because I couldn't find something good enough and I think you'll like it.
 
-Just literally something I threw up. I think you'll like it because it is so simple to work with (and tested on XCode 6.3.1 and Swift 1.2)
+When I wrote it, I tested it on XCode 6.3.1 with Swift 1.2
 
 ### Installation
 
