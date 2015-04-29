@@ -32,11 +32,11 @@ class SwiftCache {
         self.respond = { objectData in }
     }
     
-    func request(callback: (SwiftCache) -> Void) -> SwiftCache {
+    func request(callback: () -> Void) -> SwiftCache {
         if isCached() {
             self.respond(gets())
         } else {
-            callback(self)
+            callback()
         }
         
         return self
@@ -72,21 +72,17 @@ class SwiftCache {
         
         let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
         dispatch_async(dispatch_get_global_queue(priority, 0)) {
-            self.save()
+            NSUserDefaults().setObject(Int(NSDate().timeIntervalSince1970) + self.expiresIn, forKey: self.altName)
+            NSUserDefaults().setObject(data, forKey: self.name)
         }
         
         return self
     }
     
-    private func save() {
-        // Save to cache
-        NSUserDefaults().setObject(Int(NSDate().timeIntervalSince1970) + self.expiresIn, forKey: self.altName)
-        NSUserDefaults().setObject(data, forKey: self.name)
-    }
-    
     func secondsLeftInCache() -> Int {
         if let cachedUntil = NSUserDefaults().integerForKey(self.altName) as? Int {
-            return cachedUntil - Int(NSDate().timeIntervalSince1970)
+            let timeLeft = cachedUntil - Int(NSDate().timeIntervalSince1970)
+            return (timeLeft >= 0) ? timeLeft : 1
         } else {
             return -1
         }
