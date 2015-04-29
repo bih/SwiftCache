@@ -2,7 +2,9 @@
 
 A beautifully lightweight cache written for **Swift**. It has been tested on iOS and OS X. I wrote it over an hour because I couldn't find something good enough and I think you'll like it.
 
-When I wrote it, I tested it on XCode 6.3.1 with Swift 1.2. It even works with [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON) and [Alamofire](https://github.com/alamofire/alamofire), I know right!
+Tested with XCode 6.3.1 with Swift 1.2. It requires [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON) but that also means it's the only cache I know that works with SwiftyJSON and [Alamofire](https://github.com/alamofire/alamofire) and reliably so!
+
+Give it a spin.
 
 ### Installation
 
