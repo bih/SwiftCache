@@ -6,9 +6,9 @@ Tested with XCode 6.3.1 with Swift 1.2. It requires [SwiftyJSON](https://github.
 
 Give it a spin.
 
-### Installation (Cocoapods)
+### Installation (CocoaPods)
 
-You can now have SwiftCache on your Swift project using [Cocoapods](http://cocoapods.org)
+You can now have SwiftCache on your Swift project using [CocoaPods](http://cocoapods.org)
 
 Add this to your `Podfile`
 
