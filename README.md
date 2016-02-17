@@ -2,7 +2,7 @@
 
 A beautifully lightweight cache written for **Swift**. It has been tested on iOS and OS X. I wrote it over an hour because I couldn't find something good enough and I think you'll like it.
 
-Tested with XCode 6.3.1 with Swift 1.2. It requires [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON) but that also means it's the only cache I know that works with SwiftyJSON and [Alamofire](https://github.com/alamofire/alamofire) and reliably so!
+Tested with Xcode 6.3.1 with Swift 1.2. It requires [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON) but that also means it's the only cache I know that works with SwiftyJSON and [Alamofire](https://github.com/alamofire/alamofire) and reliably so!
 
 Give it a spin.
 
@@ -21,7 +21,7 @@ pod 'SwiftCache'
 
 ### Installation (Manually)
 
-Just copy the contents of `SwiftCache.swift` and insert it into your XCode. Nothing else necessary.
+Just copy the contents of `SwiftCache.swift` and insert it into your Xcode. Nothing else necessary.
 
 ### Example
 
